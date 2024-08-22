@@ -1,0 +1,117 @@
+#b1 {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Adjust height as needed */
+  background-image: url('./assets/b2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#b1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Reduced opacity to 0.3 for a lighter overlay */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+#b1 h1, #b1 p {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+}
+
+/* Optional: Add a text shadow for better readability */
+#b1 h1, #b1 p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adjust shadow as needed */
+}
+
+#b1 h1,
+#b1 p,
+#b3 h3 {
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+  color: #FFFFFF; /* White text for high visibility */
+ /* Large glow effect */
+}
+
+/* Specific styles for the h1 and p if needed */
+#b1 h1 {
+  margin-top: 8rem; /* Adjust margin as needed */
+}
+
+#b1 p {
+  margin-top: 1.5rem; /* Adjust margin as needed */
+}
+
+#b1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}  
+
+#b2 h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* home.css */
+#b3 {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Adjust height as needed */
+  background-image: url('./assets/b3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#b3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Slightly lighter overlay with 0.2 opacity */
+  z-index: 1; /* Ensure the overlay is above the background image but below the content */
+}
+
+#b3 .content {
+  position: relative; /* Ensure content is above the overlay */
+  z-index: 2; /* Ensure the content is above the overlay */
+}
+
+#b3 p {
+  color: #000000; /* Black text for high visibility */
+  text-shadow: none; /* Remove text shadow */
+}
+
+#b3 h3 {
+  color: #000000; /* Black text for headings */
+}
+
+
+#b3 a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+#b3 a:hover {
+  color: #000000; /* Change text color on hover */
+  background-color: #e53e97; /* Change background color on hover */
+}
+.transparent-card {
+  background-color: rgba(212, 203, 203, 0.5); /* White background with 50% opacity */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Inner spacing */
+  box-shadow: 0 4px 8px rgba(150, 146, 146, 0.1); /* Subtle shadow */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Border with slight opacity */
+  backdrop-filter: blur(10px); /* Optional: add a blur effect to the background behind the card */
+  overflow: hidden; /* Ensure content does not overflow */
+  position: relative; /* Ensure it stacks correctly if needed */
+}

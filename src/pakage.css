@@ -1,0 +1,27 @@
+
+.bg-image{
+background: url('src/assets/bg.jpg') no-repeat center center;
+background-size: cover;
+position: relative;
+}
+
+.bg-overlay-50::before { /* Changed class name to reflect 50% opacity */
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.5); /* Black color with 50% opacity */
+z-index: -1;
+}
+.transparent-card {
+    background-color: rgba(212, 203, 203, 0.5); /* White background with 50% opacity */
+    border-radius: 8px; /* Rounded corners */
+    padding: 16px; /* Inner spacing */
+    box-shadow: 0 4px 8px rgba(150, 146, 146, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Border with slight opacity */
+    backdrop-filter: blur(10px); /* Optional: add a blur effect to the background behind the card */
+    overflow: hidden; /* Ensure content does not overflow */
+    position: relative; /* Ensure it stacks correctly if needed */
+}
