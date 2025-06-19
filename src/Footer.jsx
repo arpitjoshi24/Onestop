@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-import './footer.css'; // Import the CSS file
+
 import logo from './assets/logo-01.png';
 import { Link } from "react-router-dom";
 

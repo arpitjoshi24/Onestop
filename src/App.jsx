@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
+
 
 import Home from './Home';
 import Navigation from './Navigation';
@@ -18,7 +18,7 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/package" element={<Pakage />} />
         <Route path="/tc" element={<Tc />} />
-        {/* <Route path="/book" element={ <Book/>} /> */}
+        <Route path="/book" element={ <Book/>} />
 
       </Routes>
       <Footer />
